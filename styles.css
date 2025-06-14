@@ -2,18 +2,19 @@ body {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   background-color: #fef9f4;
   margin: 0;
-  padding: 100px;
+  padding: 50px;
   text-align: left;
   color: #0B1D51;
 }
 
 .container {
   background-color: #FAD0C4;
-  padding: 100px;
-  border-radius: 50px;
-  max-width: 100px;
+  padding: 40px;
+  border-radius: 15px;
+  max-width: 800px;
   margin: auto;
-  box-shadow: 0 0 15px rgba(0, 0, 0, 0.05);
+  box-shadow: 0 0 25px rgba(0, 0, 0, 0.1);
+  text-align: center;
 }
 
 .profile-pic {
@@ -27,27 +28,32 @@ body {
 
 h1 {
   color: #4a4a4a;
-  font-size: 2em;
-  margin-bottom: 10px;
+  font-size: 2.5em;
+  margin-bottom: 20px;
 }
 
 section {
-  margin-bottom: 25px;
+  margin-bottom: 30px;
+  padding: 10px;
 }
 
 h2 {
   color: #0B1D51;
   margin-bottom: 10px;
+  font-size: 1.5em;
 }
 
 p {
-  margin: 0 0 10px;
+  margin: 10px 0;
+  font-size: 1.1em;
+  line-height: 1.6;
 }
 
 a {
   color: #0B1D51;
   text-decoration: none;
   font-weight: bold;
+  transition: color 0.3s, text-decoration 0.3s;
 }
 
 a:hover {
@@ -55,3 +61,67 @@ a:hover {
   text-decoration: underline;
 }
 
+button {
+  background-color: #0B1D51;
+  color: white;
+  padding: 12px 30px;
+  border: none;
+  border-radius: 5px;
+  font-size: 1.1em;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out, transform 0.2s;
+}
+
+button:hover {
+  background-color: #4a6fa3;
+  transform: scale(1.05);
+}
+
+input[type="text"] {
+  width: 70%;
+  padding: 12px;
+  font-size: 1.1em;
+  border: 2px solid #c9b6be;
+  border-radius: 5px;
+  margin-bottom: 20px;
+  transition: border-color 0.3s ease;
+}
+
+input[type="text"]:focus {
+  border-color: #0B1D51;
+  outline: none;
+}
+
+section .skills ul {
+  list-style-type: none;
+  padding: 0;
+  font-size: 1.1em;
+}
+
+section .skills li {
+  margin-bottom: 8px;
+}
+
+@media (max-width: 768px) {
+  .container {
+    padding: 20px;
+    max-width: 100%;
+  }
+
+  .profile-pic {
+    width: 120px;
+    height: 120px;
+  }
+
+  h1 {
+    font-size: 2em;
+  }
+
+  h2 {
+    font-size: 1.3em;
+  }
+
+  input[type="text"] {
+    width: 100%;
+  }
+}
